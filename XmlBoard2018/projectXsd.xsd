@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.naver.com"
+	xmlns:target="http://www.naver.com"
+	elementFormDefault="qualified">
+	<element name="장학상품">
+		<complexType>
+			<sequence>
+				<element name="장학금" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="장학금명" type="string" />
+							<element name="모집기간" type="string" />
+							<element name="선발인원" type="string" />
+							<element name="지원금액" type="string" />
+							<element name="선발대상" type="string" />
+							<element name="주최기관" type="string" />
+							<element name="기관분류" type="string" />
+							<element name="성적조건" type="string" />
+							<element name="거주조건" type="string" />
+							<element name="중복수혜" type="string" />
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
